@@ -11,33 +11,18 @@
 </body>
 </html>
 <script>
-    let myDate = function myDate(day,month,year){
-        this.day = day
-        this.month = month
-        this.year = year 
-        this.getday = function(){
-            return this.day
+    let radi = +prompt("nhập bán kính:  ") 
+    let php = function(radius){
+        this.radius = radius
+        this.getRadius = function(){
+            return radius
         }
-        this.getmonth = function(){
-            return this.month
-        }
-        this.getyear = function(){
-            return this.year
-        }
-        this.setday= function(day){
-             this.day = day
-        }
-        this.setmonth= function(month){
-             this.month = month
-        }
-        this.setyear= function(year){
-             this.year = year
-        }
+        this.getArea = function(){
+            return Math.PI*radius*radius
+        } 
     }
-      let date = new myDate(2,2,2003)
-      let day = date.getday()
-      let month = date.getmonth()
-      let year = date.getyear()
-     alert(day+"/"+month+"/"+year)
-
+    let oho = new php(radi)
+    let radius = oho.getRadius()
+    let Area = oho.getArea()
+    alert("Diện tích hình tròn có bán kính r="+radius+"là"+Area)
 </script>
