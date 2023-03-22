@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1300px" height="700px" style="border: 6px solid black;">
+<script>
+
+    // class Circle {
+    //     constructor(x,y,radius) {
+    //         this.x = x
+    //         this.y = y
+    //         this.radius = radius
+    //     }
+    //     getRandomColor(){
+    //         let red = Math.random() *255
+    //         let green = Math.random() *255
+    //         let blue = Math.random() *255
+    //         return "rgb(" + red + "," + blue + "," + green +")";
+    //     }
+    //     createCircle(){
+    //         let tyt = document.getElementById("myCanvas")
+    //         let ctx = tyt.getContext('2d')
+    //         let top = Math.random() * tyt.height
+    //         let bu  = Math.random() * tyt.width
+    //         ctx.arc(top,bu,this.radius,0,2*Math.PI)
+    //         ctx.fillStyle = this.getRandomColor();
+    //         ctx.fill()
+    //     }  
+    // }
+    // let aCircle = new Circle(50, 100, 100);
+    // aCircle.createCircle();
+    // let aCircle2 = new Circle(250, 300, 100);
+    // aCircle2.createCircle();
+    class Circle{
+        constructor(x,y,radius){
+            this.x = x
+            this.y = y
+            this.radius = radius 
+        }
+        getColor(){
+            let red = Math.random()*255
+            let green = Math.random()*255   
+            let yellow = Math.random()*255
+            return "rgb("+red+","+green+","+yellow+")"
+        }
+        getCreator(){
+             let tyt = document.getElementById("myCanvas")
+             let ctx = tyt.getContext("2d")
+             let top = Math.random()*tyt.width
+             let up = Math.random()*tyt.height
+             let radius = Math.random()*150
+             ctx.beginPath()
+             ctx.arc(top,up,radius,0,2*Math.PI)
+             ctx.fillStyle = this.getColor()
+             ctx.fill()
+             ctx.closePath()
+        }
+
+        
+    }
+    let acircle = new Circle(500,500,200)
+    acircle.getCreator()
+
+    let acircle1 = new Circle(300,100,500)
+    acircle1.getCreator()
+
+    let acircle2 = new Circle(500,100100)
+    acircle2.getCreator()
+
+    let acircle3 = new Circle(500,550,100)
+    acircle3.getCreator()
+
+    let acircle4 = new Circle(500,250,100)
+    acircle4.getCreator()
+
+    let acircle5 = new Circle(300,100,100)
+    acircle5.getCreator()
+    let acircle6 = new Circle(300,100,100)
+    acircle6.getCreator()
+    let acircle7 = new Circle(300,100,100)
+    acircl7.getCreator()
+    let acircle8 = new Circle(300,100,100)
+    acircle8.getCreator()
+    let acircle9 = new Circle(300,100,100)
+    acircle9.getCreator()
+    let acircle10 = new Circle(300,100,100)
+    acircle10.getCreator()
+
+    </script>
+    </body>
+</html>
