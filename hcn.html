@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id="myCanvas"  height="1000px" width="1000px" style="border:3px solid rebeccapurple ; "  ></canvas>
+    <script>
+        class Rectangle{
+            constructor(x,y){
+                this.x = x
+                this.y = y 
+            }
+            getArea(){
+                return x*y
+            }
+            rectangle(){
+                let trt = document.getElementById("myCanvas")
+                let tyu = trt.getContext("2p")
+                let dai = +prompt("nhập chiều dài:")
+                let rong = +prompt("nhập chiều rộng: ")
+                ctx.beginPath()
+             tyu.arc(top,up,radius,0,2*Math.PI)
+             tyu.fillStyle = this.getColor()
+             tyu.fill()
+             tyu.closePath()ty
+
+
+            }
+        }
+        let rectangle = new Rectangle(dai,rong)
+        let Area = rectangle.getArea()
+    </script>
+</body>
+</html>

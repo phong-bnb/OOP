@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        display: flex;
+    }
+</style>
+<body> 
+    <div><p> Nhập nhiệt độ:</p>
+    <input type="number" id="nhap">
+</div>
+<div>
+    <p>Chuyển sang:</p>
+    <select name="" id="luachon">
+        <option value="F">F</option>
+        <option value="K">K</option>
+    </select>
+</div>
+<button id="nhan" onclick="oidoioi()">Chuyển đổi</button>
+<script>
+    class Temperature{
+        constructor(c){
+            this.c = c 
+        }
+        chuyensangf(){
+            this.f = this.c*1.8+32
+            return this.f
+        } 
+        chuyensangk(){
+            this.k = this.c/274.1
+            return this.k
+        } 
+        }
+         function oidoioi(){
+            let c = document.getElementById("nhap").value
+            let temp = new Temperature(c);
+
+            let luachon = document.getElementById("luachon").value;
+            if (luachon == "F") {
+                let f = temp.chuyensangf();
+                alert("dayla f: "+f)
+            } else {
+                let k = temp.chuyensangk()
+                alert("day la k: "+k)
+            }
+         }
+ 
+</script>
+</body>
+</html>

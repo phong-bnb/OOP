@@ -51,7 +51,8 @@
         getCreator(){
              let tyt = document.getElementById("myCanvas")
              let ctx = tyt.getContext("2d")
-             let top = Math.random()*tyt.width
+             for(let i = 0;i<100;i++){
+                let top = Math.random()*tyt.width
              let up = Math.random()*tyt.height
              let radius = Math.random()*150
              ctx.beginPath()
@@ -59,6 +60,9 @@
              ctx.fillStyle = this.getColor()
              ctx.fill()
              ctx.closePath()
+             }
+            
+            
         }
 
         
@@ -66,31 +70,7 @@
     let acircle = new Circle(500,500,200)
     acircle.getCreator()
 
-    let acircle1 = new Circle(300,100,500)
-    acircle1.getCreator()
-
-    let acircle2 = new Circle(500,100100)
-    acircle2.getCreator()
-
-    let acircle3 = new Circle(500,550,100)
-    acircle3.getCreator()
-
-    let acircle4 = new Circle(500,250,100)
-    acircle4.getCreator()
-
-    let acircle5 = new Circle(300,100,100)
-    acircle5.getCreator()
-    let acircle6 = new Circle(300,100,100)
-    acircle6.getCreator()
-    let acircle7 = new Circle(300,100,100)
-    acircl7.getCreator()
-    let acircle8 = new Circle(300,100,100)
-    acircle8.getCreator()
-    let acircle9 = new Circle(300,100,100)
-    acircle9.getCreator()
-    let acircle10 = new Circle(300,100,100)
-    acircle10.getCreator()
-
+    
     </script>
     </body>
 </html>
